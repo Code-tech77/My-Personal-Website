@@ -97,9 +97,6 @@ Eli Lilly • MSD • AWS • Black Hat • TechEx • UKIEPC (ICPEC) • Salesf
 
 ## 📌 Featured Project
 
-🌐 **My Portfolio Website**  
-👉 https://code-tech77.github.io/new-portfolio/
-
 A personal portfolio showcasing my:
 - Experience timeline
 - Education & certifications
