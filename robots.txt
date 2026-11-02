@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://code-tech77.github.io/new-portfolio/sitemap.xml
