@@ -129,7 +129,7 @@ Outside of tech, I like keeping life simple, active, and social.
 
 ## 🤝 Let's Connect
 
-- 🌐 Portfolio: https://code-tech77.github.io/new-portfolio/  
+- 🌐 Linkedin: https://www.linkedin.com/in/mohammed-zuoriki-856133250/ 
 - 💻 GitHub: https://github.com/code-tech77  
 - 📺 YouTube: https://www.youtube.com/@CyberTutor24  
 - 💼 Open to collaboration, internships, and AI/cloud security projects  
