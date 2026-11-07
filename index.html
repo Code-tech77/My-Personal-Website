@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Zuoriki | Aspiring Cloud Security Engineer</title>
+    <meta name="description" content="Mohammed Zuoriki: aspiring Cloud Security Engineer, cybersecurity student at Brunel University London, founder of CyberTutor and the Brunel Cybersecurity Society. Projects, homelabs and certifications.">
+    <meta name="author" content="Mohammed Zuoriki">
+    <meta name="theme-color" content="#0a0906">
+    <link rel="canonical" href="https://code-tech77.github.io/new-portfolio/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mohammed Zuoriki | Aspiring Cloud Security Engineer">
+    <meta property="og:description" content="Mohammed Zuoriki: aspiring Cloud Security Engineer, cybersecurity student at Brunel University London, founder of CyberTutor and the Brunel Cybersecurity Society. Projects, homelabs and certifications.">
+    <meta property="og:url" content="https://code-tech77.github.io/new-portfolio/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Mohammed Zuoriki | Aspiring Cloud Security Engineer">
+    <meta name="twitter:description" content="Mohammed Zuoriki: aspiring Cloud Security Engineer, cybersecurity student at Brunel University London, founder of CyberTutor and the Brunel Cybersecurity Society. Projects, homelabs and certifications.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%230a0906'/><text x='50' y='66' font-family='monospace' font-size='48' font-weight='bold' fill='%23f5b800' text-anchor='middle'>MZ</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-logo">
+            <span class="nav-logo-bracket">[</span>
+            <span class="nav-logo-text">MZ</span>
+            <span class="nav-logo-bracket">]</span>
+        </div>
+        <div class="nav-links">
+            <a href="#about" class="nav-link" data-section="about">About</a>
+            <a href="#ventures" class="nav-link" data-section="ventures">Ventures</a>
+            <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+            <a href="#conferences" class="nav-link" data-section="conferences">Conferences</a>
+            <a href="#journey" class="nav-link" data-section="journey">Journey</a>
+            <a href="#book" class="nav-link" data-section="book">Book</a>
+            <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+            <a href="#homelabs" class="nav-link" data-section="homelabs">Homelabs</a>
+            <a href="#credentials" class="nav-link" data-section="credentials">Credentials</a>
+            <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+            <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#ventures" class="mobile-nav-link">Ventures</a>
+        <a href="#experience" class="mobile-nav-link">Experience</a>
+        <a href="#conferences" class="mobile-nav-link">Conferences</a>
+        <a href="#journey" class="mobile-nav-link">Journey</a>
+        <a href="#book" class="mobile-nav-link">Book</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#homelabs" class="mobile-nav-link">Homelabs</a>
+        <a href="#credentials" class="mobile-nav-link">Credentials</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
+
+    <!-- Canvas for Three.js particle background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Matrix Rain Canvas -->
+    <canvas id="matrixCanvas"></canvas>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-terminal">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-title">~/mohammed-zuoriki</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-command" id="heroCommand"></span>
+                        <span class="terminal-cursor">_</span>
+                    </div>
+                </div>
+            </div>
+            <h1 class="hero-name">
+                <span class="hero-name-line" data-text="MOHAMMED">MOHAMMED</span>
+                <span class="hero-name-line accent" data-text="ZUORIKI">ZUORIKI</span>
+            </h1>
+            <div class="hero-titles">
+                <span class="hero-title-item accent">Aspiring Cloud Security Engineer</span>
+                <span class="hero-title-divider">//</span>
+                <span class="hero-title-item">CyberTutor Content Creator</span>
+                <span class="hero-title-divider">//</span>
+                <span class="hero-title-item">Brunel University London Student</span>
+            </div>
+            <p class="hero-tagline">I value consistency, discipline and self-learning, and I think outside the box.</p>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-value" data-count="150">0</span><span class="hero-stat-suffix">+</span>
+                    <span class="hero-stat-label">Certifications</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-value" data-count="100000">0</span><span class="hero-stat-suffix">+</span>
+                    <span class="hero-stat-label">Views on Cybersecurity Content</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-value" data-count="85">0</span>
+                    <span class="hero-stat-label">GitHub Projects</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-value" data-count="10">0</span><span class="hero-stat-suffix">+</span>
+                    <span class="hero-stat-label">Hackathon Participations</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-value" data-count="400">0</span><span class="hero-stat-suffix">+</span>
+                    <span class="hero-stat-label">£ Raised for Aid</span>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="scroll-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 5v14M5 12l7 7 7-7"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scanline"></div>
+    </section>
+
+    <!-- ===================== ABOUT SECTION ===================== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title glitch-text" data-text="WHO I AM">WHO I AM</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-intro reveal-text">
+                        <span class="highlight">Cybersecurity</span> excites me because it’s a field where curiosity truly pays off.
+                        I’m driven by figuring out not just how systems work, but how to outsmart the threats they face.
+                    </p>
+                    <p class="about-body reveal-text">
+                        That mindset keeps me exploring the fast-moving world of cybersecurity and constantly pushing myself to grow.
+                        Now studying <span class="highlight">Cybersecurity at Brunel University</span>, I bring learning to life through
+                        hands-on labs, competitions and self-driven projects, never waiting for opportunities but creating them.
+                    </p>
+                    <p class="about-goal reveal-text">
+                        My long-term vision is to protect critical systems as a <span class="highlight">Cloud Security Architect</span>
+                        while sharing insights and inspiring others through content creation and cyber blogging, because for me,
+                        tech is about both building and inspiring.
+                    </p>
+                    <p class="about-body reveal-text">
+                        I enjoy reading, cycling and sipping good coffee, which keep me energised and curious.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/13ehVGynW4YQTyu_35EM3OZGL2EIQQljh" target="_blank" rel="noopener noreferrer" class="project-link">
+                        View my CV
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </a>
+                    <div class="about-highlights">
+                        <div class="about-highlight-item reveal-item">
+                            <div class="highlight-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                            </div>
+                            <div>
+                                <h4>AI &amp; Security Focus</h4>
+                                <p>Azure, Terraform, Docker and hands-on security homelabs</p>
+                            </div>
+                        </div>
+                        <div class="about-highlight-item reveal-item">
+                            <div class="highlight-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <div>
+                                <h4>Founder &amp; President</h4>
+                                <p>Brunel Cybersecurity Society (BCSS)</p>
+                            </div>
+                        </div>
+                        <div class="about-highlight-item reveal-item">
+                            <div class="highlight-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="4"/><path d="M10 9l5 3-5 3z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Content Creator &amp; Writer</h4>
+                                <p>CyberTutor on YouTube and the CyberNews blog on Substack</p>
+                            </div>
+                        </div>
+                        <div class="about-highlight-item reveal-item">
+                            <div class="highlight-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Author</h4>
+                                <p>The Three Corners: balancing brain, body and soul</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-card">
+                        <div class="card-scanline"></div>
+                        <div class="card-header">
+                            <span class="card-label">PROFILE.SYS</span>
+                            <span class="card-status">ACTIVE</span>
+                        </div>
+                        <div class="card-field">
+                            <span class="card-key">name</span>
+                            <span class="card-value">Mohammed Zuoriki</span>
+                        </div>
+                        <div class="card-field">
+                            <span class="card-key">role</span>
+                            <span class="card-value accent">Hungry to learn about InfoSec</span>
+                        </div>
+                        <div class="card-field">
+                            <span class="card-key">focus</span>
+                            <span class="card-value accent">Cloud &amp; Cybersecurity</span>
+                        </div>
+                        <div class="card-field">
+                            <span class="card-key">university</span>
+                            <span class="card-value">Brunel University London</span>
+                        </div>
+                        <div class="card-field">
+                            <span class="card-key">ventures</span>
+                            <span class="card-value">CyberTutor | BCSS | CyberNews</span>
+                        </div>
+                        <div class="card-field">
+                            <span class="card-key">status</span>
+                            <span class="card-value blink">Open to collaboration</span>
+                        </div>
+                        <div class="card-field">
+                            <span class="card-key">certs</span>
+                            <span class="card-value">AZ-104 | Security+ | SC-900</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="section-tag section-tag-close">&lt;/about&gt;</span>
+        </div>
+    </section>
+
+    <!-- ===================== VENTURES SECTION ===================== -->
+    <section class="section ventures" id="ventures">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;ventures&gt;</span>
+                <h2 class="section-title glitch-text" data-text="VENTURES">VENTURES</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Communities, content and products I have built</p>
+            </div>
+            <div class="ventures-grid">
+                <div class="project-card reveal-item featured">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="4"/><path d="M10 9l5 3-5 3z"/></svg>
+                        <span class="project-badge">Founder</span>
+                    </div>
+                    <h3 class="project-name">CyberTutor YouTube Channel</h3>
+                    <p class="project-desc">I created this YouTube channel to make cybersecurity simple, exciting and accessible for everyone. Through clear tutorials, hands-on projects and real-world insights, I aim to help both beginners and professionals sharpen their skills and stay ahead in the digital world.</p>
+                    <div class="project-tech">
+                        <span>YouTube</span>
+                        <span>Tutorials</span>
+                        <span>Cybersecurity</span>
+                    </div>
+                    <a href="https://www.youtube.com/@CyberTutor24" target="_blank" rel="noopener noreferrer" class="project-link">
+                        Watch on YouTube
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </a>
+                </div>
+                <div class="project-card reveal-item featured">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        <span class="project-badge">Founder</span>
+                    </div>
+                    <h3 class="project-name">Brunel Cybersecurity Society (BCSS)</h3>
+                    <p class="project-desc">I founded and lead BCSS, building an inclusive community for students to develop practical cybersecurity skills, collaborate on technical initiatives and explore careers in the field.</p>
+                    <div class="project-tech">
+                        <span>Founder &amp; President</span>
+                        <span>Community</span>
+                        <span>Cybersecurity</span>
+                    </div>
+                    <a href="https://brunelstudents.com/organisation/cybersoc/" target="_blank" rel="noopener noreferrer" class="project-link">
+                        Visit BCSS
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </a>
+                </div>
+                <div class="project-card reveal-item featured">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                        <span class="project-badge">Author</span>
+                    </div>
+                    <h3 class="project-name">The Three Corners</h3>
+                    <p class="project-desc">A self-improvement guide designed to help readers grow with clarity and purpose. It focuses on balancing the brain, body and soul as the three core corners of a meaningful life, with practical insights and daily habits that support strength, discipline and inner peace.</p>
+                    <div class="project-tech">
+                        <span>Book</span>
+                        <span>Self-improvement</span>
+                        <span>Amazon</span>
+                    </div>
+                    <a href="https://www.amazon.co.uk/dp/B0HCMDKSY5" target="_blank" rel="noopener noreferrer" class="project-link">
+                        View on Amazon
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </a>
+                </div>
+                <div class="project-card reveal-item">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM20 14v3M14 20h3M20 20h1"/></svg>
+                        
+                    </div>
+                    <h3 class="project-name">OneScan iOS App</h3>
+                    <p class="project-desc">A one-time scannable QR code generator with a clean, simple interface. Each code can only be scanned once, which makes it ideal for tickets, invites and exclusive access. Available on the Apple App Store for £0.99.</p>
+                    <div class="project-tech">
+                        <span>iOS</span>
+                        <span>Swift</span>
+                        <span>QR codes</span>
+                    </div>
+                    <a href="https://code-tech77.github.io/OneScan-Website/index.html" target="_blank" rel="noopener noreferrer" class="project-link">
+                        Visit the app website
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </a>
+                </div>
+                <div class="project-card reveal-item">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>
+                        
+                    </div>
+                    <h3 class="project-name">CyberNews Blog</h3>
+                    <p class="project-desc">Your source for the latest and most relevant insights in cybersecurity and technology.</p>
+                    <div class="project-tech">
+                        <span>Substack</span>
+                        <span>Writing</span>
+                        <span>Cybersecurity news</span>
+                    </div>
+                    <a href="https://mohammedzuoriki.substack.com/" target="_blank" rel="noopener noreferrer" class="project-link">
+                        Read the blog
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </a>
+                </div>
+                <div class="project-card reveal-item">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                        
+                    </div>
+                    <h3 class="project-name">CyberTutor Resource Page</h3>
+                    <p class="project-desc">A dedicated hub for CyberTutor students, packed with study guides, toolkits, book recommendations and curated links to help learners deepen their knowledge.</p>
+                    <div class="project-tech">
+                        <span>Study guides</span>
+                        <span>Toolkits</span>
+                        <span>Learning</span>
+                    </div>
+                    <a href="https://code-tech77.github.io/Portfolio-/cyber.html" target="_blank" rel="noopener noreferrer" class="project-link">
+                        Open the resources
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </a>
+                </div>
+                <div class="project-card reveal-item">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg>
+                        
+                    </div>
+                    <h3 class="project-name">Cyber Intel AI</h3>
+                    <p class="project-desc">An AI-driven, multi-agent cybersecurity platform that provides real-time threat intelligence, automated incident response and proactive defence strategies, built to help security teams stay ahead of evolving threats.</p>
+                    <div class="project-tech">
+                        <span>Multi-agent AI</span>
+                        <span>Threat intelligence</span>
+                        <span>Incident response</span>
+                    </div>
+                    <a href="https://youtu.be/dta7HnA9vy4?si=yule-I09bxJ8Nvti" target="_blank" rel="noopener noreferrer" class="project-link">
+                        Watch the demo
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </a>
+                </div>
+            </div>
+            <span class="section-tag section-tag-close">&lt;/ventures&gt;</span>
+        </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE SECTION ===================== -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;experience&gt;</span>
+                <h2 class="section-title glitch-text" data-text="EXPERIENCE">EXPERIENCE</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Professional experience, leadership and volunteering</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-item reveal-item" data-side="left">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-ping"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Oct 2026 - Present</div>
+                        <h3 class="timeline-role">AI Security Engineer</h3>
+                        <h4 class="timeline-company">FalconTag</h4>
+                        <p class="timeline-desc">6-week internship securing the systems and AI capabilities behind a platform that unifies equipment, vehicle, satellite and enterprise data for real-time decision-making across ports, terminals and manufacturing supply chains.</p><div class="timeline-tags"><span class="tag">AI</span><span class="tag">Security</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-item" data-side="right">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-ping"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Aug 2026 - Present</div>
+                        <h3 class="timeline-role">Trainee AI Engineer</h3>
+                        <h4 class="timeline-company">Global Social Innovators</h4>
+                        <p class="timeline-desc">Strengthening the security, privacy and reliability of Qflow’s AI-powered platform: protecting data across the AI system, securing backend services and storage, applying hashing and secure data handling, and keeping AI inputs and responses safe.</p><div class="timeline-tags"><span class="tag">AI</span><span class="tag">Promoted</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-item" data-side="left">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-ping"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Oct 2024 - Aug 2026</div>
+                        <h3 class="timeline-role">App Developer</h3>
+                        <h4 class="timeline-company">Global Social Innovators</h4>
+                        <p class="timeline-desc">Volunteer contributor on GSI’s mobile SaaS application for iOS and Android, using Node.js, Python and Flutter to build hands-on cross-platform development experience.</p>
+                        <div class="timeline-tags"><span class="tag">Node.js</span><span class="tag">Python</span><span class="tag">Flutter</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-item" data-side="right">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-ping"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">May 2026 - Present</div>
+                        <h3 class="timeline-role">Software Engineer</h3>
+                        <h4 class="timeline-company">Brunel Talent Marketplace (BTM)</h4>
+                        <p class="timeline-desc">Selected from 450+ students for the Brunel Talent Marketplace Talent Program, contributing to open-source projects in software automation, workflow optimisation and development productivity.</p><div class="timeline-tags"><span class="tag">Software</span><span class="tag">Engineering</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-item" data-side="left">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-ping"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jul 2026 - Present</div>
+                        <h3 class="timeline-role">Technical Lead | Campus Program</h3>
+                        <h4 class="timeline-company">HackerRank</h4>
+                        <p class="timeline-desc">Leading the HackerRank Campus community at Brunel University by fostering a culture of technical excellence, collaboration and continuous learning.</p><div class="timeline-tags"><span class="tag">Leadership</span><span class="tag">Campus</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-item" data-side="right">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-ping"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jul 2026 - Sep 2026</div>
+                        <h3 class="timeline-role">Cloud &amp; AI Engineering Intern</h3>
+                        <h4 class="timeline-company">Google Cloud</h4>
+                        <p class="timeline-desc">Selected as a Google Cloud Arcade Facilitator ‘26, joining a global learning initiative that builds practical cloud expertise through hands-on challenges and real-world applications.</p><div class="timeline-tags"><span class="tag">Cloud</span><span class="tag">AI</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-item" data-side="left">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-ping"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jul 2026 - Sep 2026</div>
+                        <h3 class="timeline-role">Data Analyst</h3>
+                        <h4 class="timeline-company">Fraser Coutts &amp; Partners</h4>
+                        <p class="timeline-desc">Joined through the Brunel Summer Internship Programme (BSIP), applying data-driven approaches to solve real business challenges and gaining valuable industry experience.</p><div class="timeline-tags"><span class="tag">Data</span><span class="tag">Analytics</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-item" data-side="right">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-ping"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">May 2026 - Jul 2026</div>
+                        <h3 class="timeline-role">AI Security Mentor and Instructor</h3>
+                        <h4 class="timeline-company">Screen Share UK</h4>
+                        <p class="timeline-desc">Mentored and instructed learners on AI security fundamentals, covering common threats and safe, responsible use of AI through guided sessions.</p><div class="timeline-tags"><span class="tag">Teaching</span><span class="tag">AI Security</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-item" data-side="left">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-ping"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Feb 2026 - Jun 2026</div>
+                        <h3 class="timeline-role">Microsoft Affiliated Data Science Intern</h3>
+                        <h4 class="timeline-company">Intelligence Tech Solutions</h4>
+                        <p class="timeline-desc">Worked on data science projects through a Microsoft-affiliated programme, applying data analysis and machine learning techniques to real-world datasets.</p><div class="timeline-tags"><span class="tag">Data Science</span><span class="tag">Microsoft</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-item" data-side="right">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-ping"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jun 2026 - Aug 2026</div>
+                        <h3 class="timeline-role">Research Assistant (Microservices Architecture Software)</h3>
+                        <h4 class="timeline-company">Brunel University of London</h4>
+                        <p class="timeline-desc">Supported research into microservices architecture, contributing to system design, experimentation and technical documentation.</p><div class="timeline-tags"><span class="tag">Research</span><span class="tag">Microservices</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-item" data-side="left">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-ping"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Mar 2026 - Present</div>
+                        <h3 class="timeline-role">Lead Ambassador &amp; Public Speaker</h3>
+                        <h4 class="timeline-company">Brunel University of London</h4>
+                        <p class="timeline-desc">Representing Brunel University of London at outreach events, speaking with prospective students and the wider community about university life and opportunities.</p><div class="timeline-tags"><span class="tag">Leadership</span><span class="tag">Public Speaking</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-item" data-side="right">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-ping"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Feb 2023 - Mar 2023</div>
+                        <h3 class="timeline-role">Information Technology Internship</h3>
+                        <h4 class="timeline-company">IBM</h4>
+                        <p class="timeline-desc">Gained early industry exposure to IT and enterprise technology through a work experience placement at IBM.</p><div class="timeline-tags"><span class="tag">IT</span><span class="tag">Internship</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-item" data-side="left">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-ping"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Society leadership</div>
+                        <h3 class="timeline-role">Founder &amp; President</h3>
+                        <h4 class="timeline-company">Brunel Cybersecurity Society (BCSS)</h4>
+                        <ul class="timeline-details">
+                            <li>Founded and lead an inclusive community for students to build practical cybersecurity skills</li>
+                            <li>Collaborating on technical initiatives and helping members explore careers in the field</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Leadership</span>
+                            <span class="tag">Community</span>
+                            <span class="tag">Cybersecurity</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-item" data-side="right">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-ping"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Volunteer</div>
+                        <h3 class="timeline-role">Fundraising Volunteer</h3>
+                        <h4 class="timeline-company">Ayesha Youth Project (AVP)</h4>
+                        <ul class="timeline-details">
+                            <li>First role at the organisation, responsible for raising money for humanitarian action</li>
+                            <li>Raised over £400 toward the fundraising effort, to help a wide range of people in need</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Fundraising</span>
+                            <span class="tag">Humanitarian</span>
+                            <span class="tag">Community</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-item" data-side="left">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-ping"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Volunteer</div>
+                        <h3 class="timeline-role">Customer Service Volunteer</h3>
+                        <h4 class="timeline-company">Yemen Land Ltd</h4>
+                        <ul class="timeline-details">
+                            <li>Supported customers, resolving their inquiries and ensuring a positive experience</li>
+                            <li>Strengthened communication skills and the ability to handle diverse customer needs</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Customer Service</span>
+                            <span class="tag">Communication</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-item" data-side="right">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-ping"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Volunteer</div>
+                        <h3 class="timeline-role">Youth Holiday Activities Programme</h3>
+                        <h4 class="timeline-company">The Renewal Programme</h4>
+                        <ul class="timeline-details">
+                            <li>Helping organise summer holiday activities for local children aged 8 to 12 at Kingston Primary School</li>
+                            <li>Mixed sports such as basketball, football and boxing, to fill the children’s free time with activities that build health</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Youth</span>
+                            <span class="tag">Sport</span>
+                            <span class="tag">Community</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-item" data-side="left">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-ping"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Hackathon 2025</div>
+                        <h3 class="timeline-role">Participant, Information Security Lead &amp; Prototype Designer</h3>
+                        <h4 class="timeline-company">Deen Developers Hackathon</h4>
+                        <ul class="timeline-details">
+                            <li>Built Route AI with a passionate team: an AI and cloud solution that helps people in under-resourced countries find the nearest emergency hospital by the safest route</li>
+                            <li>Led information security and designed the prototype, so the system was both secure and user-friendly</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Hackathon</span>
+                            <span class="tag">InfoSec</span>
+                            <span class="tag">AI</span>
+                            <span class="tag">Cloud</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="section-tag section-tag-close">&lt;/experience&gt;</span>
+        </div>
+    </section>
+
+    <!-- ===================== CONFERENCES SECTION ===================== -->
+    <section class="section conferences" id="conferences">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;conferences&gt;</span>
+                <h2 class="section-title glitch-text" data-text="CONFERENCES ATTENDED">CONFERENCES ATTENDED</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Events and industry gatherings I have attended</p>
+            </div>
+        </div>
+        <div class="conf-marquee" aria-label="Companies whose conferences and events I have attended">
+            <div class="conf-row conf-row-ltr">
+                <ul class="conf-track"><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Eli Lilly"><img src="assets/logos/eli-lilly.png" alt="Eli Lilly logo" loading="lazy"><span class="conf-name">Eli Lilly</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="MSD"><img src="assets/logos/msd.png" alt="MSD logo" loading="lazy"><span class="conf-name">MSD</span></li><li class="conf-logo" style="--logo-bg:#04273a" tabindex="0" aria-label="AWS"><img src="assets/logos/aws.png" alt="AWS logo" loading="lazy"><span class="conf-name">AWS</span></li><li class="conf-logo" style="--logo-bg:#000000" tabindex="0" aria-label="Black Hat"><img src="assets/logos/blackhat.png" alt="Black Hat logo" loading="lazy"><span class="conf-name">Black Hat</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="TechEx"><img src="assets/logos/techex.png" alt="TechEx logo" loading="lazy"><span class="conf-name">TechEx</span></li><li class="conf-logo" style="--logo-bg:#000000" tabindex="0" aria-label="UKIEPC (ICPEC)"><img src="assets/logos/ukiepc.png" alt="UKIEPC (ICPEC) logo" loading="lazy"><span class="conf-name">UKIEPC (ICPEC)</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Salesforce"><img src="assets/logos/salesforce.png" alt="Salesforce logo" loading="lazy"><span class="conf-name">Salesforce</span></li><li class="conf-logo" style="--logo-bg:#151515" tabindex="0" aria-label="Red Hat"><img src="assets/logos/redhat.png" alt="Red Hat logo" loading="lazy"><span class="conf-name">Red Hat</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="GitHub"><img src="assets/logos/github.png" alt="GitHub logo" loading="lazy"><span class="conf-name">GitHub</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="GitLab"><img src="assets/logos/gitlab.png" alt="GitLab logo" loading="lazy"><span class="conf-name">GitLab</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Softr"><img src="assets/logos/softr.png" alt="Softr logo" loading="lazy"><span class="conf-name">Softr</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="TikTok"><img src="assets/logos/tiktok.png" alt="TikTok logo" loading="lazy"><span class="conf-name">TikTok</span></li><li class="conf-logo" style="--logo-bg:#f2f2f2" tabindex="0" aria-label="Google"><img src="assets/logos/google.png" alt="Google logo" loading="lazy"><span class="conf-name">Google</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Microsoft"><img src="assets/logos/microsoft.png" alt="Microsoft logo" loading="lazy"><span class="conf-name">Microsoft</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Saudi Aramco Energy Ventures"><img src="assets/logos/aramco.png" alt="Saudi Aramco Energy Ventures logo" loading="lazy"><span class="conf-name">Saudi Aramco Energy Ventures</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Saudi Properties &amp; REGA"><img src="assets/logos/saudi-properties-rega.png" alt="Saudi Properties & REGA logo" loading="lazy"><span class="conf-name">Saudi Properties &amp; REGA</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Mohammad Al Habib"><img src="assets/logos/al-habib.png" alt="Mohammad Al Habib logo" loading="lazy"><span class="conf-name">Mohammad Al Habib</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Oblivious"><img src="assets/logos/oblivious.png" alt="Oblivious logo" loading="lazy"><span class="conf-name">Oblivious</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="King’s College London"><img src="assets/logos/kings-college-london.png" alt="King’s College London logo" loading="lazy"><span class="conf-name">King’s College London</span></li><li class="conf-logo" style="--logo-bg:#143d39" tabindex="0" aria-label="University of Exeter"><img src="assets/logos/exeter.png" alt="University of Exeter logo" loading="lazy"><span class="conf-name">University of Exeter</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Setyl"><img src="assets/logos/setyl.png" alt="Setyl logo" loading="lazy"><span class="conf-name">Setyl</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="CrowdStrike"><img src="assets/logos/crowdstrike.png" alt="CrowdStrike logo" loading="lazy"><span class="conf-name">CrowdStrike</span></li><li class="conf-logo conf-bleed" style="--logo-bg:#0b2a7a" tabindex="0" aria-label="Vultr"><img src="assets/logos/vultr.png" alt="Vultr logo" loading="lazy"><span class="conf-name">Vultr</span></li><li class="conf-logo conf-bleed" style="--logo-bg:#0b2a7a" tabindex="0" aria-label="Descope"><img src="assets/logos/descope.png" alt="Descope logo" loading="lazy"><span class="conf-name">Descope</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Vercel"><img src="assets/logos/vercel.png" alt="Vercel logo" loading="lazy"><span class="conf-name">Vercel</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Eli Lilly"><img src="assets/logos/eli-lilly.png" alt="Eli Lilly logo" loading="lazy"><span class="conf-name">Eli Lilly</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="MSD"><img src="assets/logos/msd.png" alt="MSD logo" loading="lazy"><span class="conf-name">MSD</span></li><li class="conf-logo" style="--logo-bg:#04273a" tabindex="0" aria-label="AWS"><img src="assets/logos/aws.png" alt="AWS logo" loading="lazy"><span class="conf-name">AWS</span></li><li class="conf-logo" style="--logo-bg:#000000" tabindex="0" aria-label="Black Hat"><img src="assets/logos/blackhat.png" alt="Black Hat logo" loading="lazy"><span class="conf-name">Black Hat</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="TechEx"><img src="assets/logos/techex.png" alt="TechEx logo" loading="lazy"><span class="conf-name">TechEx</span></li><li class="conf-logo" style="--logo-bg:#000000" tabindex="0" aria-label="UKIEPC (ICPEC)"><img src="assets/logos/ukiepc.png" alt="UKIEPC (ICPEC) logo" loading="lazy"><span class="conf-name">UKIEPC (ICPEC)</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Salesforce"><img src="assets/logos/salesforce.png" alt="Salesforce logo" loading="lazy"><span class="conf-name">Salesforce</span></li><li class="conf-logo" style="--logo-bg:#151515" tabindex="0" aria-label="Red Hat"><img src="assets/logos/redhat.png" alt="Red Hat logo" loading="lazy"><span class="conf-name">Red Hat</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="GitHub"><img src="assets/logos/github.png" alt="GitHub logo" loading="lazy"><span class="conf-name">GitHub</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="GitLab"><img src="assets/logos/gitlab.png" alt="GitLab logo" loading="lazy"><span class="conf-name">GitLab</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Softr"><img src="assets/logos/softr.png" alt="Softr logo" loading="lazy"><span class="conf-name">Softr</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="TikTok"><img src="assets/logos/tiktok.png" alt="TikTok logo" loading="lazy"><span class="conf-name">TikTok</span></li><li class="conf-logo" style="--logo-bg:#f2f2f2" tabindex="0" aria-label="Google"><img src="assets/logos/google.png" alt="Google logo" loading="lazy"><span class="conf-name">Google</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Microsoft"><img src="assets/logos/microsoft.png" alt="Microsoft logo" loading="lazy"><span class="conf-name">Microsoft</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Saudi Aramco Energy Ventures"><img src="assets/logos/aramco.png" alt="Saudi Aramco Energy Ventures logo" loading="lazy"><span class="conf-name">Saudi Aramco Energy Ventures</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Saudi Properties &amp; REGA"><img src="assets/logos/saudi-properties-rega.png" alt="Saudi Properties & REGA logo" loading="lazy"><span class="conf-name">Saudi Properties &amp; REGA</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Mohammad Al Habib"><img src="assets/logos/al-habib.png" alt="Mohammad Al Habib logo" loading="lazy"><span class="conf-name">Mohammad Al Habib</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Oblivious"><img src="assets/logos/oblivious.png" alt="Oblivious logo" loading="lazy"><span class="conf-name">Oblivious</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="King’s College London"><img src="assets/logos/kings-college-london.png" alt="King’s College London logo" loading="lazy"><span class="conf-name">King’s College London</span></li><li class="conf-logo" style="--logo-bg:#143d39" tabindex="0" aria-label="University of Exeter"><img src="assets/logos/exeter.png" alt="University of Exeter logo" loading="lazy"><span class="conf-name">University of Exeter</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Setyl"><img src="assets/logos/setyl.png" alt="Setyl logo" loading="lazy"><span class="conf-name">Setyl</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="CrowdStrike"><img src="assets/logos/crowdstrike.png" alt="CrowdStrike logo" loading="lazy"><span class="conf-name">CrowdStrike</span></li><li class="conf-logo conf-bleed" style="--logo-bg:#0b2a7a" tabindex="0" aria-label="Vultr"><img src="assets/logos/vultr.png" alt="Vultr logo" loading="lazy"><span class="conf-name">Vultr</span></li><li class="conf-logo conf-bleed" style="--logo-bg:#0b2a7a" tabindex="0" aria-label="Descope"><img src="assets/logos/descope.png" alt="Descope logo" loading="lazy"><span class="conf-name">Descope</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Vercel"><img src="assets/logos/vercel.png" alt="Vercel logo" loading="lazy"><span class="conf-name">Vercel</span></li></ul>
+            </div>
+            <div class="conf-row conf-row-rtl">
+                <ul class="conf-track"><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Vercel"><img src="assets/logos/vercel.png" alt="Vercel logo" loading="lazy"><span class="conf-name">Vercel</span></li><li class="conf-logo conf-bleed" style="--logo-bg:#0b2a7a" tabindex="0" aria-label="Descope"><img src="assets/logos/descope.png" alt="Descope logo" loading="lazy"><span class="conf-name">Descope</span></li><li class="conf-logo conf-bleed" style="--logo-bg:#0b2a7a" tabindex="0" aria-label="Vultr"><img src="assets/logos/vultr.png" alt="Vultr logo" loading="lazy"><span class="conf-name">Vultr</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="CrowdStrike"><img src="assets/logos/crowdstrike.png" alt="CrowdStrike logo" loading="lazy"><span class="conf-name">CrowdStrike</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Setyl"><img src="assets/logos/setyl.png" alt="Setyl logo" loading="lazy"><span class="conf-name">Setyl</span></li><li class="conf-logo" style="--logo-bg:#143d39" tabindex="0" aria-label="University of Exeter"><img src="assets/logos/exeter.png" alt="University of Exeter logo" loading="lazy"><span class="conf-name">University of Exeter</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="King’s College London"><img src="assets/logos/kings-college-london.png" alt="King’s College London logo" loading="lazy"><span class="conf-name">King’s College London</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Oblivious"><img src="assets/logos/oblivious.png" alt="Oblivious logo" loading="lazy"><span class="conf-name">Oblivious</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Mohammad Al Habib"><img src="assets/logos/al-habib.png" alt="Mohammad Al Habib logo" loading="lazy"><span class="conf-name">Mohammad Al Habib</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Saudi Properties &amp; REGA"><img src="assets/logos/saudi-properties-rega.png" alt="Saudi Properties & REGA logo" loading="lazy"><span class="conf-name">Saudi Properties &amp; REGA</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Saudi Aramco Energy Ventures"><img src="assets/logos/aramco.png" alt="Saudi Aramco Energy Ventures logo" loading="lazy"><span class="conf-name">Saudi Aramco Energy Ventures</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Microsoft"><img src="assets/logos/microsoft.png" alt="Microsoft logo" loading="lazy"><span class="conf-name">Microsoft</span></li><li class="conf-logo" style="--logo-bg:#f2f2f2" tabindex="0" aria-label="Google"><img src="assets/logos/google.png" alt="Google logo" loading="lazy"><span class="conf-name">Google</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="TikTok"><img src="assets/logos/tiktok.png" alt="TikTok logo" loading="lazy"><span class="conf-name">TikTok</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Softr"><img src="assets/logos/softr.png" alt="Softr logo" loading="lazy"><span class="conf-name">Softr</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="GitLab"><img src="assets/logos/gitlab.png" alt="GitLab logo" loading="lazy"><span class="conf-name">GitLab</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="GitHub"><img src="assets/logos/github.png" alt="GitHub logo" loading="lazy"><span class="conf-name">GitHub</span></li><li class="conf-logo" style="--logo-bg:#151515" tabindex="0" aria-label="Red Hat"><img src="assets/logos/redhat.png" alt="Red Hat logo" loading="lazy"><span class="conf-name">Red Hat</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Salesforce"><img src="assets/logos/salesforce.png" alt="Salesforce logo" loading="lazy"><span class="conf-name">Salesforce</span></li><li class="conf-logo" style="--logo-bg:#000000" tabindex="0" aria-label="UKIEPC (ICPEC)"><img src="assets/logos/ukiepc.png" alt="UKIEPC (ICPEC) logo" loading="lazy"><span class="conf-name">UKIEPC (ICPEC)</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="TechEx"><img src="assets/logos/techex.png" alt="TechEx logo" loading="lazy"><span class="conf-name">TechEx</span></li><li class="conf-logo" style="--logo-bg:#000000" tabindex="0" aria-label="Black Hat"><img src="assets/logos/blackhat.png" alt="Black Hat logo" loading="lazy"><span class="conf-name">Black Hat</span></li><li class="conf-logo" style="--logo-bg:#04273a" tabindex="0" aria-label="AWS"><img src="assets/logos/aws.png" alt="AWS logo" loading="lazy"><span class="conf-name">AWS</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="MSD"><img src="assets/logos/msd.png" alt="MSD logo" loading="lazy"><span class="conf-name">MSD</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Eli Lilly"><img src="assets/logos/eli-lilly.png" alt="Eli Lilly logo" loading="lazy"><span class="conf-name">Eli Lilly</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Vercel"><img src="assets/logos/vercel.png" alt="Vercel logo" loading="lazy"><span class="conf-name">Vercel</span></li><li class="conf-logo conf-bleed" style="--logo-bg:#0b2a7a" tabindex="0" aria-label="Descope"><img src="assets/logos/descope.png" alt="Descope logo" loading="lazy"><span class="conf-name">Descope</span></li><li class="conf-logo conf-bleed" style="--logo-bg:#0b2a7a" tabindex="0" aria-label="Vultr"><img src="assets/logos/vultr.png" alt="Vultr logo" loading="lazy"><span class="conf-name">Vultr</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="CrowdStrike"><img src="assets/logos/crowdstrike.png" alt="CrowdStrike logo" loading="lazy"><span class="conf-name">CrowdStrike</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Setyl"><img src="assets/logos/setyl.png" alt="Setyl logo" loading="lazy"><span class="conf-name">Setyl</span></li><li class="conf-logo" style="--logo-bg:#143d39" tabindex="0" aria-label="University of Exeter"><img src="assets/logos/exeter.png" alt="University of Exeter logo" loading="lazy"><span class="conf-name">University of Exeter</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="King’s College London"><img src="assets/logos/kings-college-london.png" alt="King’s College London logo" loading="lazy"><span class="conf-name">King’s College London</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Oblivious"><img src="assets/logos/oblivious.png" alt="Oblivious logo" loading="lazy"><span class="conf-name">Oblivious</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Mohammad Al Habib"><img src="assets/logos/al-habib.png" alt="Mohammad Al Habib logo" loading="lazy"><span class="conf-name">Mohammad Al Habib</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Saudi Properties &amp; REGA"><img src="assets/logos/saudi-properties-rega.png" alt="Saudi Properties & REGA logo" loading="lazy"><span class="conf-name">Saudi Properties &amp; REGA</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Saudi Aramco Energy Ventures"><img src="assets/logos/aramco.png" alt="Saudi Aramco Energy Ventures logo" loading="lazy"><span class="conf-name">Saudi Aramco Energy Ventures</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Microsoft"><img src="assets/logos/microsoft.png" alt="Microsoft logo" loading="lazy"><span class="conf-name">Microsoft</span></li><li class="conf-logo" style="--logo-bg:#f2f2f2" tabindex="0" aria-label="Google"><img src="assets/logos/google.png" alt="Google logo" loading="lazy"><span class="conf-name">Google</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="TikTok"><img src="assets/logos/tiktok.png" alt="TikTok logo" loading="lazy"><span class="conf-name">TikTok</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Softr"><img src="assets/logos/softr.png" alt="Softr logo" loading="lazy"><span class="conf-name">Softr</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="GitLab"><img src="assets/logos/gitlab.png" alt="GitLab logo" loading="lazy"><span class="conf-name">GitLab</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="GitHub"><img src="assets/logos/github.png" alt="GitHub logo" loading="lazy"><span class="conf-name">GitHub</span></li><li class="conf-logo" style="--logo-bg:#151515" tabindex="0" aria-label="Red Hat"><img src="assets/logos/redhat.png" alt="Red Hat logo" loading="lazy"><span class="conf-name">Red Hat</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Salesforce"><img src="assets/logos/salesforce.png" alt="Salesforce logo" loading="lazy"><span class="conf-name">Salesforce</span></li><li class="conf-logo" style="--logo-bg:#000000" tabindex="0" aria-label="UKIEPC (ICPEC)"><img src="assets/logos/ukiepc.png" alt="UKIEPC (ICPEC) logo" loading="lazy"><span class="conf-name">UKIEPC (ICPEC)</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="TechEx"><img src="assets/logos/techex.png" alt="TechEx logo" loading="lazy"><span class="conf-name">TechEx</span></li><li class="conf-logo" style="--logo-bg:#000000" tabindex="0" aria-label="Black Hat"><img src="assets/logos/blackhat.png" alt="Black Hat logo" loading="lazy"><span class="conf-name">Black Hat</span></li><li class="conf-logo" style="--logo-bg:#04273a" tabindex="0" aria-label="AWS"><img src="assets/logos/aws.png" alt="AWS logo" loading="lazy"><span class="conf-name">AWS</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="MSD"><img src="assets/logos/msd.png" alt="MSD logo" loading="lazy"><span class="conf-name">MSD</span></li><li class="conf-logo" style="--logo-bg:#ffffff" tabindex="0" aria-label="Eli Lilly"><img src="assets/logos/eli-lilly.png" alt="Eli Lilly logo" loading="lazy"><span class="conf-name">Eli Lilly</span></li></ul>
+            </div>
+        </div>
+        <div class="container">
+            <span class="section-tag section-tag-close">&lt;/conferences&gt;</span>
+        </div>
+    </section>
+
+    <!-- ===================== JOURNEY GALLERY SECTION ===================== -->
+    <section class="section journey" id="journey">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;journey&gt;</span>
+                <h2 class="section-title glitch-text" data-text="DOCUMENT THE JOURNEY">DOCUMENT THE JOURNEY</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Moments from hackathons, stages and events along the way</p>
+            </div>
+            <div class="gallery-grid">
+                <figure class="gallery-item reveal-item" tabindex="0" data-title="Public Speaking at Brunel" data-tag="Speaking">
+                    <img src="assets/gallery/public-speaking-brunel.jpg" alt="Student panel speaking event at Brunel University of London" width="800" height="1077" loading="lazy">
+                    <figcaption class="gallery-caption">
+                        <span class="gallery-index">01</span>
+                        <span class="gallery-tag">Speaking</span>
+                        <span class="gallery-title">Public Speaking at Brunel</span>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item reveal-item" tabindex="0" data-title="Softr Hackathon · Pitch" data-tag="Pitching">
+                    <img src="assets/gallery/softr-pitch.jpg" alt="Pitching at the Softr hackathon event" width="1100" height="816" loading="lazy">
+                    <figcaption class="gallery-caption">
+                        <span class="gallery-index">02</span>
+                        <span class="gallery-tag">Pitching</span>
+                        <span class="gallery-title">Softr Hackathon · Pitch</span>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item reveal-item" tabindex="0" data-title="PAL Leadership Session" data-tag="Leadership">
+                    <img src="assets/gallery/pal-leading.jpg" alt="Leading a session on stage with a quiz on screen" width="800" height="739" loading="lazy">
+                    <figcaption class="gallery-caption">
+                        <span class="gallery-index">03</span>
+                        <span class="gallery-tag">Leadership</span>
+                        <span class="gallery-title">PAL Leadership Session</span>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item reveal-item" tabindex="0" data-title="Eli Lilly &amp; MSD Hackathon" data-tag="Hackathon">
+                    <img src="assets/gallery/eli-lilly-msd-hackathon.jpg" alt="Hackathon badge for Team 8 at the Lilly and MSD hackathon" width="600" height="800" loading="lazy">
+                    <figcaption class="gallery-caption">
+                        <span class="gallery-index">04</span>
+                        <span class="gallery-tag">Hackathon</span>
+                        <span class="gallery-title">Eli Lilly &amp; MSD Hackathon</span>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item reveal-item" tabindex="0" data-title="OxHack ’26 · University of Oxford" data-tag="Hackathon">
+                    <img src="assets/gallery/oxhack-26.jpg" alt="OxHack 26 welcome screen at the University of Oxford" width="600" height="800" loading="lazy">
+                    <figcaption class="gallery-caption">
+                        <span class="gallery-index">05</span>
+                        <span class="gallery-tag">Hackathon</span>
+                        <span class="gallery-title">OxHack ’26 · University of Oxford</span>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item reveal-item" tabindex="0" data-title="KAIZEN Collab · King’s College London" data-tag="Hackathon">
+                    <img src="assets/gallery/kcl-kaizen-collab.jpg" alt="KAIZEN Collab AI Showcase and Hackathon banner at King’s College London" width="600" height="800" loading="lazy">
+                    <figcaption class="gallery-caption">
+                        <span class="gallery-index">06</span>
+                        <span class="gallery-tag">Hackathon</span>
+                        <span class="gallery-title">KAIZEN Collab · King’s College London</span>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item reveal-item" tabindex="0" data-title="Campaign Lab Hackathon 2026" data-tag="Hackathon">
+                    <img src="assets/gallery/campaign-lab-2026.jpg" alt="Working on laptops at the Campaign Lab Hackathon 2026" width="160" height="160" loading="lazy">
+                    <figcaption class="gallery-caption">
+                        <span class="gallery-index">07</span>
+                        <span class="gallery-tag">Hackathon</span>
+                        <span class="gallery-title">Campaign Lab Hackathon 2026</span>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item reveal-item" tabindex="0" data-title="Eli Lilly · Code for All Hackathon" data-tag="Hackathon">
+                    <img src="assets/gallery/eli-lilly-code-for-all.jpg" alt="Team outside the Eli Lilly office in Bracknell" width="1100" height="825" loading="lazy">
+                    <figcaption class="gallery-caption">
+                        <span class="gallery-index">08</span>
+                        <span class="gallery-tag">Hackathon</span>
+                        <span class="gallery-title">Eli Lilly · Code for All Hackathon</span>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item reveal-item" tabindex="0" data-title="UKIEPC Programming Contest" data-tag="Competition">
+                    <img src="assets/gallery/ukiepc.jpg" alt="Team at the UKIEPC programming contest" width="1100" height="825" loading="lazy">
+                    <figcaption class="gallery-caption">
+                        <span class="gallery-index">09</span>
+                        <span class="gallery-tag">Competition</span>
+                        <span class="gallery-title">UKIEPC Programming Contest</span>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item reveal-item" tabindex="0" data-title="Saudi Luxury Real Estate Show" data-tag="Conference">
+                    <img src="assets/gallery/saudi-luxury-real-estate-show.jpg" alt="Event badge at the Saudi Luxury Real Estate Show" width="800" height="1066" loading="lazy">
+                    <figcaption class="gallery-caption">
+                        <span class="gallery-index">10</span>
+                        <span class="gallery-tag">Conference</span>
+                        <span class="gallery-title">Saudi Luxury Real Estate Show</span>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item reveal-item" tabindex="0" data-title="OxHack Hackathon · The Team" data-tag="Team">
+                    <img src="assets/gallery/oxhack-team.jpg" alt="Team photo at OxHack" width="800" height="788" loading="lazy">
+                    <figcaption class="gallery-caption">
+                        <span class="gallery-index">11</span>
+                        <span class="gallery-tag">Team</span>
+                        <span class="gallery-title">OxHack Hackathon · The Team</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <span class="section-tag section-tag-close">&lt;/journey&gt;</span>
+        </div>
+    </section>
+
+    <!-- Gallery lightbox -->
+    <div class="gallery-lightbox" id="galleryLightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+        <button type="button" class="gl-btn gl-close" aria-label="Close">&times;</button>
+        <button type="button" class="gl-btn gl-prev" aria-label="Previous photo">&#8249;</button>
+        <button type="button" class="gl-btn gl-next" aria-label="Next photo">&#8250;</button>
+        <figure class="gl-figure">
+            <img id="glImg" src="" alt="">
+            <figcaption><span id="glTag"></span><strong id="glTitle"></strong></figcaption>
+        </figure>
+    </div>
+
+    <!-- ===================== BOOK SECTION ===================== -->
+    <section class="section book-section" id="book">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;book&gt;</span>
+                <h2 class="section-title glitch-text" data-text="THE BOOK">THE BOOK</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Author of The Three Corners</p>
+            </div>
+
+            <div class="book-layout">
+                <div class="book-showcase reveal-item">
+                    <div class="book-stage" id="bookStage" aria-label="Interactive 3D book. Move your cursor or drag to rotate.">
+                        <div class="book-glow" aria-hidden="true"></div>
+                        <div class="book-shadow" aria-hidden="true"></div>
+                        <div class="book" id="book3d">
+                            <div class="book-face book-front">
+                                <img src="assets/book/front.jpg" alt="Front cover of The Three Corners: A way to improve imperfections, by Mohammed Zuoriki" draggable="false">
+                                <span class="book-shine" aria-hidden="true"></span>
+                            </div>
+                            <div class="book-face book-back">
+                                <img src="assets/book/back.jpg" alt="Back cover of The Three Corners" draggable="false">
+                                <span class="book-shine" aria-hidden="true"></span>
+                            </div>
+                            <div class="book-face book-spine" aria-hidden="true">
+                                <span class="spine-title">THE THREE CORNERS</span>
+                                <span class="spine-author">M. ZUORIKI</span>
+                            </div>
+                            <div class="book-face book-pages" aria-hidden="true"></div>
+                            <div class="book-face book-top" aria-hidden="true"></div>
+                            <div class="book-face book-bottom" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                    <div class="book-controls">
+                        <button type="button" class="book-btn is-active" data-face="0">Front</button>
+                        <button type="button" class="book-btn" data-face="180">Back</button>
+                    </div>
+                    <p class="book-hint"><span class="hint-hover">Hover to tilt · drag to spin</span><span class="hint-touch">Drag with your finger to rotate</span></p>
+                </div>
+
+                <div class="book-info reveal-item">
+                    <span class="book-kicker">A guide to lasting change</span>
+                    <h3 class="book-title">The Three Corners</h3>
+                    <p class="book-subtitle">A way to improve imperfections</p>
+                    <p class="book-quote">You were never lazy. You were just unaligned.</p>
+                    <p class="book-desc">Twenty chapters drawn from my own struggle with distraction, burnout and lost direction. The book looks at the balance between your Brain, your Body and your Soul, and how aligning them builds discipline, energy and purpose that outlast motivation.</p>
+                    <p class="book-desc">It is not about becoming perfect. It is a way to improve imperfections, one aligned decision at a time.</p>
+                    <div class="timeline-tags book-tags">
+                        <span class="tag">Self-Help</span>
+                        <span class="tag">Personal Growth</span>
+                        <span class="tag">20 Chapters</span>
+                    </div>
+                </div>
+            </div>
+            <span class="section-tag section-tag-close">&lt;/book&gt;</span>
+        </div>
+    </section>
+
+    <!-- ===================== PROJECTS SECTION ===================== -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title glitch-text" data-text="SOFTWARE PROJECTS">SOFTWARE PROJECTS</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle"><a href="https://github.com/Code-tech77" target="_blank" rel="noopener noreferrer" class="github-link"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg> github.com/Code-tech77</a></p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card reveal-item">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                        
+                    </div>
+                    <h3 class="project-name">AI-Powered Learning Platform (Next.js)</h3>
+                    <p class="project-desc">A modern web-based learning platform for Software Requirements Engineering (SRE), built with Next.js to improve student understanding through interactive labs, adaptive assessments and AI-assisted learning support.</p>
+                    <div class="project-tech">
+                        <span>Next.js</span>
+                        <span>AI</span>
+                        <span>Education</span>
+                    </div>
+                    <a href="https://github.com/Code-tech77/Se-Education-Toolkit-Modified" target="_blank" rel="noopener noreferrer" class="project-link">
+                        View documentation
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </a>
+                </div>
+                <div class="project-card reveal-item">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                        
+                    </div>
+                    <h3 class="project-name">LexiAI: Intelligent News Summarizer</h3>
+                    <p class="project-desc">Transforms long news articles into concise insights using NLP. Built with Python (Flask), JavaScript and NLP tools such as LexRank and newspaper3k.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>NLP</span>
+                    </div>
+                    <a href="https://github.com/Code-tech77/LexiAI" target="_blank" rel="noopener noreferrer" class="project-link">
+                        View documentation
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </a>
+                </div>
+                <div class="project-card reveal-item">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg>
+                        
+                    </div>
+                    <h3 class="project-name">Local AI Assistant</h3>
+                    <p class="project-desc">One of my favourite projects, mixing Docker, Ubuntu and an Ollama model. Set up through Windows CMD with WSL and run locally from Obsidian, one of the best note-taking systems.</p>
+                    <div class="project-tech">
+                        <span>Docker</span>
+                        <span>Ubuntu</span>
+                        <span>Ollama</span>
+                        <span>Obsidian</span>
+                    </div>
+                    <a href="https://github.com/Code-tech77/Local-AI" target="_blank" rel="noopener noreferrer" class="project-link">
+                        View documentation
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </a>
+                </div>
+                <div class="project-card reveal-item">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        
+                    </div>
+                    <h3 class="project-name">Password Hash Cracker</h3>
+                    <p class="project-desc">Created for educational purposes ONLY. A Python tool that cracks both MD5 and SHA1 hashes, with a simple HTML and CSS interface.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>MD5</span>
+                        <span>SHA1</span>
+                    </div>
+                    <a href="https://github.com/Code-tech77/Hash-Cracker" target="_blank" rel="noopener noreferrer" class="project-link">
+                        View source code
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </a>
+                </div>
+                <div class="project-card reveal-item">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                        
+                    </div>
+                    <h3 class="project-name">File Organizer Extension</h3>
+                    <p class="project-desc">A very lightweight Python program that is surprisingly effective. If you have messy files everywhere, this one is for you: simple and effective.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Automation</span>
+                    </div>
+                    <a href="https://github.com/Code-tech77/File-Organizer" target="_blank" rel="noopener noreferrer" class="project-link">
+                        View source code
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </a>
+                </div>
+                <div class="project-card reveal-item">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                        
+                    </div>
+                    <h3 class="project-name">Smart Study Companion (SSC)</h3>
+                    <p class="project-desc">A full-stack, fully local and privacy-focused study assistant that helps university students extract concise, context-aware answers directly from their lecture PDFs.</p>
+                    <div class="project-tech">
+                        <span>Full stack</span>
+                        <span>Local-first</span>
+                        <span>Privacy</span>
+                    </div>
+                    <a href="https://github.com/Code-tech77/Smart-Study-Companion-SSC-" target="_blank" rel="noopener noreferrer" class="project-link">
+                        View source code
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </a>
+                </div>
+            </div>
+            <span class="section-tag section-tag-close">&lt;/projects&gt;</span>
+        </div>
+    </section>
+
+    <!-- ===================== HOMELABS SECTION ===================== -->
+    <section class="section homelabs" id="homelabs">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;homelabs&gt;</span>
+                <h2 class="section-title glitch-text" data-text="HOMELABS">HOMELABS</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Hands-on cloud and security labs</p>
+            </div>
+            <div class="homelabs-grid">
+                <div class="project-card reveal-item">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><circle cx="6" cy="6" r="1"/><circle cx="6" cy="18" r="1"/></svg>
+                        
+                    </div>
+                    <h3 class="project-name">Building My Own Private Cloud (VPC)</h3>
+                    <p class="project-desc">A self-hosted private cloud built on a Raspberry Pi 4B with Nextcloud and Tailscale, providing secure file storage, seamless remote access and full control over personal data.</p>
+                    <div class="project-tech">
+                        <span>Raspberry Pi 4B</span>
+                        <span>Nextcloud</span>
+                        <span>Tailscale</span>
+                    </div>
+                    <a href="https://code-tech77.github.io/private-cloud-docs/welcome/" target="_blank" rel="noopener noreferrer" class="project-link">
+                        View documentation
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </a>
+                </div>
+                <div class="project-card reveal-item">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1"/></svg>
+                        
+                    </div>
+                    <h3 class="project-name">Network Wide DNS Ad Blocking System</h3>
+                    <p class="project-desc">A network-wide ad-blocking solution using Pi-hole on a Raspberry Pi, filtering ads across all devices through DNS-based blocking. Integrated with Cloudflare DNS to improve privacy, browsing speed and network control, while building hands-on skills in Linux setup, configuration and troubleshooting.</p>
+                    <div class="project-tech">
+                        <span>Pi-hole</span>
+                        <span>Cloudflare DNS</span>
+                        <span>Linux</span>
+                    </div>
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7451962878653497344/" target="_blank" rel="noopener noreferrer" class="project-link">
+                        View documentation
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </a>
+                </div>
+                <div class="project-card reveal-item">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        
+                    </div>
+                    <h3 class="project-name">Red &amp; Blue Team Simulation</h3>
+                    <p class="project-desc">A full-spectrum enterprise security lab simulating Red Team attacks and SOC-level defences. It covered reconnaissance, credential testing, post-compromise analysis with Evil WinRM, and defensive monitoring with Wazuh, bridging attack simulation and enterprise defence.</p>
+                    <div class="project-tech">
+                        <span>Red Team</span>
+                        <span>Blue Team</span>
+                        <span>Wazuh</span>
+                        <span>Evil WinRM</span>
+                    </div>
+                    <a href="https://github.com/Code-tech77/Keystone-Homelab-Red-Blue-Team-Simulation" target="_blank" rel="noopener noreferrer" class="project-link">
+                        View documentation
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </a>
+                </div>
+                <div class="project-card reveal-item">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                        
+                    </div>
+                    <h3 class="project-name">Oracle Cloud Cowrie Honeypot Homelab</h3>
+                    <p class="project-desc">A cloud-based SSH Cowrie honeypot deployed across Oracle Cloud and Azure to capture and analyse malicious login attempts. Integrated with Docker and Grafana, it strengthened my skills in cloud security, networking and threat analysis by visualising real-world attack activity.</p>
+                    <div class="project-tech">
+                        <span>Cowrie</span>
+                        <span>Oracle Cloud</span>
+                        <span>Azure</span>
+                        <span>Grafana</span>
+                    </div>
+                    <a href="https://github.com/Code-tech77/Orcale-Cowrie-Honeypot-Lab" target="_blank" rel="noopener noreferrer" class="project-link">
+                        View documentation
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </a>
+                </div>
+                <div class="project-card reveal-item">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                        
+                    </div>
+                    <h3 class="project-name">Self-Hosted Audio Streaming Platform</h3>
+                    <p class="project-desc">A self-hosted audio streaming platform deployed with Navidrome, containerised with Docker and securely accessed through Tailscale.</p>
+                    <div class="project-tech">
+                        <span>Navidrome</span>
+                        <span>Docker</span>
+                        <span>Tailscale</span>
+                    </div>
+                    <a href="https://github.com/Code-tech77/Homelab-Audio-Streaming-Platform" target="_blank" rel="noopener noreferrer" class="project-link">
+                        View documentation
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </a>
+                </div>
+                <div class="project-card reveal-item">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        
+                    </div>
+                    <h3 class="project-name">Secure Cloud Network Tunneling Environment</h3>
+                    <p class="project-desc">A private WireGuard VPN gateway: a cloud-based security solution that encrypts and routes your internet traffic through a private Oracle Cloud instance for maximum privacy. Built with WireGuard, Docker and SSH encryption.</p>
+                    <div class="project-tech">
+                        <span>WireGuard</span>
+                        <span>Docker</span>
+                        <span>Oracle Cloud</span>
+                        <span>SSH</span>
+                    </div>
+                    <a href="https://github.com/Code-tech77/Secure-Cloud-Network-Tunneling-Environment-SCNTE-" target="_blank" rel="noopener noreferrer" class="project-link">
+                        View documentation
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </a>
+                </div>
+            </div>
+            <span class="section-tag section-tag-close">&lt;/homelabs&gt;</span>
+        </div>
+    </section>
+
+    <!-- ===================== CREDENTIALS SECTION ===================== -->
+    <section class="section education" id="credentials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;credentials&gt;</span>
+                <h2 class="section-title glitch-text" data-text="EDUCATION &amp; CERTS">EDUCATION &amp; CERTS</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="education-main">
+                <div class="education-card reveal-item">
+                    <div class="edu-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    </div>
+                    <div class="edu-content">
+                        <h3>Computer Science with Cybersecurity</h3>
+                        <span class="edu-date">2025 - Present</span>
+                        <h4>Brunel University London</h4>
+                        <p class="edu-highlight">Hands-on labs, competitions and self-driven projects, with a long-term goal of becoming a Cloud Security Engineer.</p>
+                    </div>
+                </div>
+                <div class="education-card reveal-item">
+                    <div class="edu-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    </div>
+                    <div class="edu-content">
+                        <h3>BTEC Level 3 Extended Diploma in IT with Cybersecurity</h3>
+                        <span class="edu-date">2023 - 2025</span>
+                        <h4>Newham Sixth Form College (NewVic)</h4>
+                        <p class="edu-highlight">Grade: A*A*A*</p>
+                    </div>
+                </div>
+            </div>
+            <div class="credentials-grid">
+                <div class="cert-card reveal-item">
+                    <div class="cert-badge"><svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div>
+                    <div class="cert-info">
+                        <h4>Security+</h4>
+                        <span>CompTIA | Nov 2025</span>
+                        <p>Proves a solid understanding of essential cybersecurity concepts, including network security, risk management and threat analysis, and the ability to apply security best practices and respond to real-world threats.</p>
+                    </div>
+                </div>
+                <div class="cert-card reveal-item">
+                    <div class="cert-badge"><svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><rect x="9" y="11" width="6" height="5" rx="1"/><path d="M10 11V9.5a2 2 0 0 1 4 0V11"/></svg></div>
+                    <div class="cert-info">
+                        <h4>SC-900</h4>
+                        <span>Microsoft Azure | Jun 2025</span>
+                        <p>My first step toward becoming a Cloud Security Engineer: focused, committed and hungry to learn more.</p>
+                    </div>
+                </div>
+                <div class="cert-card reveal-item">
+                    <div class="cert-badge"><svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 9l3 3-3 3M11 15h6"/></svg></div>
+                    <div class="cert-info">
+                        <h4>LFS101: Introduction to Linux</h4>
+                        <span>Linux Foundation | Aug 2025</span>
+                        <p>Skills to navigate and manage configurations across major Linux distributions, using both the graphical interface and the command line.</p>
+                    </div>
+                </div>
+                <div class="cert-card reveal-item">
+                    <div class="cert-badge"><svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 9a3 3 0 0 1 6 0v6a3 3 0 0 1-6 0z"/><path d="M9 12H4M15 12h5M9 8L6 5M15 8l3-3M9 16l-3 3M15 16l3 3M12 6v12"/></svg></div>
+                    <div class="cert-info">
+                        <h4>Ethical Hacker</h4>
+                        <span>Cisco | Feb 2025</span>
+                        <p>Student-level credential showing a broad understanding of legal and compliance requirements, and proficiency in scoping, executing and reporting vulnerability assessments and recommending mitigation strategies.</p>
+                    </div>
+                </div>
+                <div class="cert-card reveal-item">
+                    <div class="cert-badge"><svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/><path d="M9 14h6M12 11v6"/></svg></div>
+                    <div class="cert-info">
+                        <h4>AZ-104: Azure Administrator</h4>
+                        <span>Microsoft | Jul 2026</span>
+                        <p>Validates expertise in managing cloud services that span storage, security, networking and compute across Microsoft Azure environments.</p>
+                    </div>
+                </div>
+                <div class="cert-card reveal-item">
+                    <div class="cert-badge"><svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l8 4.5v9L12 20l-8-4.5v-9z"/><path d="M12 11l8-4.5M12 11L4 6.5M12 11v9"/></svg></div>
+                    <div class="cert-info">
+                        <h4>Terraform Associate</h4>
+                        <span>HashiCorp | Aug 2026</span>
+                        <p>Demonstrates proficiency in the basic concepts and skills of HashiCorp Terraform, including infrastructure as code, execution plans and state management.</p>
+                    </div>
+                </div>
+                <div class="cert-card reveal-item">
+                    <div class="cert-badge"><svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><circle cx="12" cy="11" r="1.5"/><path d="M12 12.5V16M9 9l2 1.2M15 9l-2 1.2"/></svg></div>
+                    <div class="cert-info">
+                        <h4>Fortinet Certified Associate</h4>
+                        <span>Fortinet | Feb 2026</span>
+                        <p>Validates fundamental knowledge of cybersecurity concepts and Fortinet’s basic network security solutions and principles.</p>
+                    </div>
+                </div>
+                <div class="cert-card reveal-item">
+                    <div class="cert-badge"><svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="8" height="5" rx="1"/><rect x="14" y="14" width="8" height="5" rx="1"/><path d="M10 7.5h5a3 3 0 0 1 3 3V14M14 16.5H9a3 3 0 0 1-3-3V10"/></svg></div>
+                    <div class="cert-info">
+                        <h4>IBM MQ Certification</h4>
+                        <span>IBM | Jan 2026</span>
+                        <p>Proves knowledge of IBM MQ administration, messaging concepts and architecture, and the ability to configure and manage queue managers.</p>
+                    </div>
+                </div>
+                <div class="cert-card reveal-item">
+                    <div class="cert-badge"><svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M3.3 7l17.4 10M3.3 17L20.7 7"/><path d="M9.5 3.8L12 6l2.5-2.2M9.5 20.2L12 18l2.5 2.2"/></svg></div>
+                    <div class="cert-info">
+                        <h4>Snowflake GenAI Professional</h4>
+                        <span>Snowflake | Mar 2026</span>
+                        <p>Demonstrates the ability to use Snowflake’s data capabilities to train, evaluate and deploy generative AI models.</p>
+                    </div>
+                </div>
+            </div>
+            <span class="section-tag section-tag-close">&lt;/credentials&gt;</span>
+        </div>
+    </section>
+
+    <!-- ===================== SKILLS SECTION ===================== -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title glitch-text" data-text="TECHNICAL SKILLS">TECHNICAL SKILLS</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category reveal-item">
+                    <h3 class="skill-cat-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                        Cloud &amp; DevOps
+                    </h3>
+                    <div class="skill-chips">
+                        <span>Azure</span>
+                        <span>AWS</span>
+                        <span>Terraform</span>
+                        <span>Docker</span>
+                        <span>Kubernetes (learning)</span>
+                        <span>Tailscale</span>
+                        <span>Vercel</span>
+                        <span>Hostinger</span>
+                        <span>Firebase</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal-item">
+                    <h3 class="skill-cat-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        Cybersecurity
+                    </h3>
+                    <div class="skill-chips">
+                        <span>Network Security</span>
+                        <span>WAF</span>
+                        <span>Identity &amp; Access Management</span>
+                        <span>Threat Modeling</span>
+                        <span>Kali Linux</span>
+                        <span>Pi-hole</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal-item">
+                    <h3 class="skill-cat-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        Programming &amp; Web
+                    </h3>
+                    <div class="skill-chips">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>Bash Scripting</span>
+                        <span>Shell Scripting</span>
+                        <span>Swift</span>
+                        <span>Java</span>
+                        <span>SQL</span>
+                        <span>Node.js</span>
+                        <span>Next.js</span>
+                        <span>Vite</span>
+                        <span>TensorFlow</span>
+                        <span>NumPy</span>
+                        <span>Ollama LLM</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal-item">
+                    <h3 class="skill-cat-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><circle cx="6" cy="6" r="1"/><circle cx="6" cy="18" r="1"/></svg>
+                        Systems &amp; Tools
+                    </h3>
+                    <div class="skill-chips">
+                        <span>Debian Linux</span>
+                        <span>RHEL</span>
+                        <span>Ubuntu</span>
+                        <span>Arch Linux</span>
+                        <span>Linux Mint</span>
+                        <span>WSL</span>
+                        <span>VS Code</span>
+                        <span>Cursor IDE</span>
+                        <span>Eclipse</span>
+                        <span>Figma</span>
+                        <span>Canva</span>
+                        <span>Obsidian</span>
+                        <span>Notion</span>
+                        <span>DaVinci Resolve</span>
+                    </div>
+                </div>
+            </div>
+            <span class="section-tag section-tag-close">&lt;/skills&gt;</span>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title glitch-text" data-text="GET IN TOUCH">GET IN TOUCH</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <p class="contact-intro reveal-text">
+                    Open to collaboration, internships and cloud and security projects. Let’s talk.
+                </p>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/mohammed-zuoriki-856133250/" target="_blank" rel="noopener noreferrer" class="contact-card reveal-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </div>
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">Mohammed Zuoriki</span>
+                    </a>
+                    <a href="https://github.com/Code-tech77" target="_blank" rel="noopener noreferrer" class="contact-card reveal-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </div>
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">Code-tech77</span>
+                    </a>
+                    <a href="https://www.youtube.com/@CyberTutor24" target="_blank" rel="noopener noreferrer" class="contact-card reveal-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="4"/><path d="M10 9l5 3-5 3z"/></svg>
+                        </div>
+                        <span class="contact-label">YouTube</span>
+                        <span class="contact-value">@CyberTutor24</span>
+                    </a>
+                    <a href="https://mohammedzuoriki.substack.com/" target="_blank" rel="noopener noreferrer" class="contact-card reveal-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>
+                        </div>
+                        <span class="contact-label">CyberNews</span>
+                        <span class="contact-value">mohammedzuoriki.substack.com</span>
+                    </a>
+                </div>
+                <div class="contact-terminal reveal-item">
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                        <span class="terminal-title">~/connect</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$</span>
+                            <span class="terminal-text">echo "Learning. Discipline. Keep growing."</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="terminal-output">&gt; Learning. Discipline. Keep growing.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="section-tag section-tag-close">&lt;/contact&gt;</span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <span class="footer-text">Mohammed Zuoriki &copy; 2026</span>
+                <span class="footer-divider">|</span>
+                <span class="footer-text">Learning. Discipline. Keep growing.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts (CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha384-CI3ELBVUz9XQO+97x6nwMDPosPR5XvsxW2ua7N1Xeygeh1IxtgqtCkGfQY9WWdHu" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js" integrity="sha384-RVPQwTb0fPz9kI8s5GwAq1Qioto9fnEQt1aKGSQSm8xV6+DIdBSgcCShoHqfKnhv" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
